@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { logo } from '../assets/images';
 import { navItems } from '../constants';
 import { Link } from 'react-router-dom';
-import { Import, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 function Navbar() {
   const [mobileDrawerOpen, setMobileDrawerOpen] =useState(false);
