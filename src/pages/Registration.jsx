@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Footer from '../components/Footer';
 
 
 function Registration() {
@@ -20,7 +21,7 @@ function Registration() {
           </div>
           <div className="w-full lg:w-1/2 py-16 px-12">
             <h2 className="text-3xl mb-4">Register</h2>
-            <p className="mb-4 text-cyan-500" >
+            <p className="mb-4 text-cyan-500">
               Create your account. It’s free and only takes a minute
             </p>
             <form action="#">
@@ -65,7 +66,9 @@ function Registration() {
                     I Accept Terms of Use
                   </a>{" "}
                   &{" "}
-                 
+                  <a href="#" className="text-cyan-500 font-semibold">
+                    Sign In Here
+                  </a>
                 </span>
               </div>
               <div className="mt-5">
@@ -78,6 +81,7 @@ function Registration() {
         </div>
       </div>
     </div>
+    <Footer/>
     </>
    
   );
