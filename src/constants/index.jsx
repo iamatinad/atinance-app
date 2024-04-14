@@ -8,7 +8,6 @@ import { ShieldHalf } from "lucide-react";
 export const navItems = [
   { label: "Home", href: "#" },
   { label: "Features", href: "#features" },
-  
   { label: "Contact us", href: "#contact" },
 
 ];
