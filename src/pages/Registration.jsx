@@ -20,8 +20,8 @@ function Registration() {
           </div>
           <div className="w-full lg:w-1/2 py-16 px-12">
             <h2 className="text-3xl mb-4">Register</h2>
-            <p className="mb-4">
-              Create your account. It’s free and only take a minute
+            <p className="mb-4 text-cyan-500" >
+              Create your account. It’s free and only takes a minute
             </p>
             <form action="#">
               <div className="grid grid-cols-2 gap-5">
@@ -65,9 +65,7 @@ function Registration() {
                     I Accept Terms of Use
                   </a>{" "}
                   &{" "}
-                  <a href="#" className="text-cyan-500 font-semibold">
-                    Privacy Policy
-                  </a>
+                 
                 </span>
               </div>
               <div className="mt-5">
