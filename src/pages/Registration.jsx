@@ -20,7 +20,7 @@ function Registration() {
           
           </div>
           <div className="w-full lg:w-1/2 py-16 px-12">
-            <h2 className="text-3xl mb-4">Register</h2>
+            <h2 className="text-3xl mb-4 text-cyan-500">Register</h2>
             <p className="mb-4 text-cyan-500">
               Create your account. It’s free and only takes a minute
             </p>
