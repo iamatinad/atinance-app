@@ -53,8 +53,8 @@ function Navbar() {
               ))}
             </ul>
             <div className='flex space-x-6'>
-              <Link to="Login" className="py-2 px-3 border rounded-md">Sign In</Link>
-              <Link to="Registration" className="py-2 px-3 rounded-md bg-gradient-to-r from-cyan-500 to-cyan-800 "> Create an account</Link>
+              <Link to="/login" className="py-2 px-3 border rounded-md">Sign In</Link>
+              <Link to="/registration" className="py-2 px-3 rounded-md bg-gradient-to-r from-cyan-500 to-cyan-800 "> Create an account</Link>
             </div>
           </div>
         )}
