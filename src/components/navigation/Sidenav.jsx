@@ -5,20 +5,26 @@ import { RiSettings4Line } from "react-icons/ri";
 import { AiOutlineUser } from "react-icons/ai";
 
 import { Link } from "react-router-dom";
-import { FaChartLine, FaCreditCard } from "react-icons/fa";
+import { FaChartLine, FaCreditCard, FaHistory, FaHome, FaMoneyBillAlt } from "react-icons/fa";
 import { MdMonetizationOn } from "react-icons/md";
 import { FaArrowDown19 } from "react-icons/fa6";
+import { FiLogOut } from "react-icons/fi";
 
 const Sidenav = () => {
   const menus = [
-    { name: "Dashboard", link: "/", icon: FaChartLine },
+    { name: "Home", link: "/", icon: FaHome },
+    { name: "Dashboard", link: "/dashboard", icon: FaChartLine },
 
-    { name: "Transactions", link: "/", icon: FaCreditCard },
+    { name: "Transactions", link: "/transactions", icon: FaCreditCard },
 
-    { name: "Incomes", link: "/", icon: MdMonetizationOn },
-    { name: "Expenses", link: "/", icon: FaArrowDown19 },
+    { name: "Budget", link: "/budget", icon: FaMoneyBillAlt },
+
+    { name: "Incomes", link: "/income", icon: MdMonetizationOn },
+    { name: "Expenses", link: "/expense", icon: FaArrowDown19 },
+    { name: "History", link: "/history", icon: FaHistory },
     { name: "User", link: "/", icon: AiOutlineUser },
     { name: "Settings", link: "/", icon: RiSettings4Line },
+    { name: "Logout", link: "/", icon: FiLogOut },
   ];
   const [open, setOpen] = useState(true);
   return (
@@ -28,11 +34,7 @@ const Sidenav = () => {
           open ? "w-72" : "w-16"
         } duration-500 text-gray-100 px-4`}
       >
-       <Link to="/" >
-          <span className=" justify-start text-xl tracking-tight">Atinance</span>
-        </Link >
         <div className="py-3 flex justify-end">
-    
           <HiMenuAlt3
             size={26}
             className="cursor-pointer"

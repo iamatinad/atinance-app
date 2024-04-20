@@ -1,5 +1,5 @@
 import React from "react";
-import Sidenav from "../../components/Sidebar";
+import Sidenav from "../components/navigation/Sidenav";
 
 
 function Dashboard() {

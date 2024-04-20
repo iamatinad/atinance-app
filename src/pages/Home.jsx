@@ -1,8 +1,8 @@
 import React from 'react'
-import Navbar from '../components/Navbar';
-import Hero from '../components/Hero';
-import Features from '../components/Features';
-import Footer from '../components/Footer';
+import Navbar from '../components/navigation/Navbar';
+import Hero from '../components/landing/Hero';
+import Features from '../components/landing/Features';
+import Footer from '../components/landing/Footer';
 
 
 function Home() {
