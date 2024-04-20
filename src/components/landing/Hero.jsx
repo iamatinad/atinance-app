@@ -19,8 +19,11 @@ Atinance, a web app for expense tracking.  Take control of your finances, gain i
         <div className="flex justify-center my-10">
             
 
-        <Link to="Registration"  className="bg-gradient-to-r from-cyan-500 to-cyan-800 py-3 px-4 mx-3 rounded-md" >Start for free </Link>
+        <Link to="/registration"  className="bg-gradient-to-r from-cyan-500 to-cyan-800 py-3 px-4 mx-3 rounded-md" >Start for free </Link>
         
+        <Link to="/dashboard" className="py-3 px-4 mx-3 rounded-md border">
+          Dashboard
+        </Link>
         
 </div>
 <div className="flex mt-10 justify-center">
