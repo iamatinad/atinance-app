@@ -1,13 +1,11 @@
-import React from "react";
-import Sidenav from "../components/navigation/Sidenav";
-
+import React from 'react'
+import Sidenav from '../components/navigation/Sidenav'
 
 function Dashboard() {
   return (
-    <>
-     <Sidenav/>
-    </>
-  );
+    <Sidenav/>
+    
+  )
 }
 
-export default Dashboard;
+export default Dashboard

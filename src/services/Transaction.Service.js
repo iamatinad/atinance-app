@@ -1,4 +1,3 @@
-// transactionService.js
 
 const BASE_URL = '/api/transactions';
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const ExpenseList = ({ expenses, editExpense, deleteExpense }) => {
   const [editMode, setEditMode] = useState(false);
@@ -20,18 +20,29 @@ const ExpenseList = ({ expenses, editExpense, deleteExpense }) => {
     setEditedExpense(null);
   };
 
+  // Add a null check for the expenses prop
+  if (!expenses) {
+    return null;
+  }
+
   return (
     <div>
       <h2 className="text-lg font-semibold mb-4">Expense List</h2>
       {editMode ? (
-        <ExpenseEditForm expense={editedExpense} onCancelEdit={handleCancelEdit} onSubmit={handleSubmit} />
+        <ExpenseEditForm
+          expense={editedExpense}
+          onCancelEdit={handleCancelEdit}
+          onSubmit={handleSubmit}
+        />
       ) : (
         <ul className="divide-y divide-gray-300">
           {expenses.map((expense) => (
             <li key={expense.id} className="py-2">
               <div className="flex justify-between">
                 <div>
-                  <h3 className="text-lg font-semibold">{expense.description}</h3>
+                  <h3 className="text-lg font-semibold">
+                    {expense.description}
+                  </h3>
                   <p className="text-gray-600">{expense.date}</p>
                 </div>
                 <div>
@@ -74,7 +85,9 @@ const ExpenseEditForm = ({ expense, onCancelEdit, onSubmit }) => {
     <form onSubmit={handleSubmit} className="mb-8">
       <h2 className="text-lg font-semibold mb-2">Edit Expense</h2>
       <div className="mb-4">
-        <label htmlFor="description" className="block mb-1">Description:</label>
+        <label htmlFor="description" className="block mb-1">
+          Description:
+        </label>
         <input
           type="text"
           id="description"
@@ -84,7 +97,9 @@ const ExpenseEditForm = ({ expense, onCancelEdit, onSubmit }) => {
         />
       </div>
       <div className="mb-4">
-        <label htmlFor="amount" className="block mb-1">Amount:</label>
+        <label htmlFor="amount" className="block mb-1">
+          Amount:
+        </label>
         <input
           type="number"
           id="amount"
@@ -94,7 +109,9 @@ const ExpenseEditForm = ({ expense, onCancelEdit, onSubmit }) => {
         />
       </div>
       <div className="mb-4">
-        <label htmlFor="date" className="block mb-1">Date:</label>
+        <label htmlFor="date" className="block mb-1">
+          Date:
+        </label>
         <input
           type="date"
           id="date"
@@ -104,8 +121,18 @@ const ExpenseEditForm = ({ expense, onCancelEdit, onSubmit }) => {
         />
       </div>
       <div className="flex justify-between">
-        <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">Save</button>
-        <button onClick={onCancelEdit} className="bg-gray-300 text-gray-700 px-4 py-2 rounded">Cancel</button>
+        <button
+          type="submit"
+          className="bg-blue-500 text-white px-4 py-2 rounded"
+        >
+          Save
+        </button>
+        <button
+          onClick={onCancelEdit}
+          className="bg-gray-300 text-gray-700 px-4 py-2 rounded"
+        >
+          Cancel
+        </button>
       </div>
     </form>
   );

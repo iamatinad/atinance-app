@@ -5,7 +5,13 @@ import { RiSettings4Line } from "react-icons/ri";
 import { AiOutlineUser } from "react-icons/ai";
 
 import { Link } from "react-router-dom";
-import { FaChartLine, FaCreditCard, FaHistory, FaHome, FaMoneyBillAlt } from "react-icons/fa";
+import {
+  FaChartLine,
+  FaCreditCard,
+  FaHistory,
+  FaHome,
+  FaMoneyBillAlt,
+} from "react-icons/fa";
 import { MdMonetizationOn } from "react-icons/md";
 import { FaArrowDown19 } from "react-icons/fa6";
 import { FiLogOut } from "react-icons/fi";
@@ -22,8 +28,8 @@ const Sidenav = () => {
     { name: "Incomes", link: "/income", icon: MdMonetizationOn },
     { name: "Expenses", link: "/expense", icon: FaArrowDown19 },
     { name: "History", link: "/history", icon: FaHistory },
-    { name: "User", link: "/", icon: AiOutlineUser },
-    { name: "Settings", link: "/", icon: RiSettings4Line },
+    { name: "User", link: "/profile", icon: AiOutlineUser },
+    { name: "Settings", link: "/settings", icon: RiSettings4Line },
     { name: "Logout", link: "/", icon: FiLogOut },
   ];
   const [open, setOpen] = useState(true);
