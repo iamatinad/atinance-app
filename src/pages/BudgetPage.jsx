@@ -80,7 +80,7 @@ const BudgetPage = () => {
           </div>
         </div>
         <div>
-          <h2 className="text-2xl font-semibold mb-4">Transactions</h2>
+          <h2 className="text-lg font-semibold mb-2">Transactions</h2>
           <ul className="space-y-2">
             {transactions.map((transaction, index) => (
               <li
@@ -97,7 +97,7 @@ const BudgetPage = () => {
           </ul>
         </div>
         <div className="mt-8">
-          <h2 className="text-2xl font-semibold mb-4">Remaining Budget</h2>
+          <h2 className="text-lg font-semibold mb-2">Remaining Budget</h2>
           <p className="text-xl">Remaining Budget: ${remainingBudget.toFixed(2)}</p>
         </div>
       </div>

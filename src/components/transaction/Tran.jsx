@@ -13,7 +13,7 @@ const TransactionList = ({ transactions }) => {
                 <p className="text-gray-600">{transaction.date}</p>
               </div>
               <div>
-                <span className={transaction.amount >= 0 ? 'text-green-500' : 'text-red-500'}>
+                <span className={transaction.amount >= 0 ? 'text-green-500' : 'text-blue-500'}>
                   ${Math.abs(transaction.amount)}
                 </span>
               </div>

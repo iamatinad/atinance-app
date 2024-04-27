@@ -12,6 +12,8 @@ import DashboardPage from "./pages/Dashboard";
 import ProfilePage from "./pages/ProfilePage";
 import { UserProvider } from './components/context/Usercontext';
 import SettingsPage from "./pages/SettingsPage";
+import Sidenav from "./components/navigation/Sidenav";
+import Dashboard from "./pages/Dashboard";
 
 
 
@@ -25,7 +27,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="registration" element={<Registration />} />
         <Route path="login" element={<Login />} />
-        <Route path="dashboard" element={<DashboardPage/>} />
+        <Route path="dashboard" element={<Sidenav/>} />
+        <Route path="dashboardp" element={<Dashboard/>} />
         <Route path="transactions" element={<TransactionsPage/>} />
         <Route path="budget" element={<BudgetPage/>} />
         <Route path="expense" element={<ExpensePage/>} />

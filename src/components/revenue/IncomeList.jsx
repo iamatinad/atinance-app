@@ -20,9 +20,9 @@ const IncomeList = ({ incomes, editIncome, deleteIncome }) => {
     setEditedIncome(null);
   };
 
-  // Add a null check for the incomes prop
-  if (!incomes) {
-    return null;
+  // Add additional null check for incomes prop
+  if (!incomes || !Array.isArray(incomes)) {
+    return <div>No incomes available.</div>;
   }
 
   return (

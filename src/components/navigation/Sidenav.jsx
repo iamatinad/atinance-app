@@ -19,7 +19,7 @@ import { FiLogOut } from "react-icons/fi";
 const Sidenav = () => {
   const menus = [
     { name: "Home", link: "/", icon: FaHome },
-    { name: "Dashboard", link: "/dashboard", icon: FaChartLine },
+    { name: "Dashboard", link: "/dashboardp", icon: FaChartLine },
 
     { name: "Transactions", link: "/transactions", icon: FaCreditCard },
 

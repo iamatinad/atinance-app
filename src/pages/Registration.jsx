@@ -16,11 +16,14 @@ function Registration() {
     console.log(userDetails);
 
     try {
-      const Data = await fetch(`${process.env.ATINANCE_API_URL}/api/users/register`, {
+      const response = await fetch(`${import.meta.env.VITE_ATINANCE_API_URL}/api/users/register`, {
         method: "POST",
-        body: userData,
+        body: JSON.stringify(userDetails),
+        headers: {
+          'Content-Type': 'application/json'
+        }
       });
-      console.log(Data);
+      console.log(response);
     } catch (error) {
       console.log(error);
     }

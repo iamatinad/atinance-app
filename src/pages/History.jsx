@@ -1,6 +1,6 @@
 import React from 'react';
 import Sidenav from '../components/navigation/Sidenav';
-import TransactionList from '../components/TransactionList'; // Import the TransactionList component
+import TransactionList from '../components/TransactionList'; 
 
 const HistoryPage = ({ transactions }) => {
   return (
