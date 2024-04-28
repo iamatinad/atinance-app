@@ -8,6 +8,7 @@ const IncomePage = () => {
   const [incomes, setIncomes] = useState([]);
 
   const addIncome = (income) => {
+    
     setIncomes([...incomes, { ...income, id: Math.random() }]);
   };
 

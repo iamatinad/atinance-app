@@ -9,7 +9,9 @@ const TransactionPage = () => {
     setAmount(event.target.value);
   };
 
-  const handleTransaction = (isIncome) => {
+  const handleTransaction = (isIncome) =>
+   {
+   
     const newTransaction = {
       amount: parseFloat(amount),
       type: isIncome ? 'Income' : 'Expense',
